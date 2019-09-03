@@ -81,5 +81,8 @@ return new \Phalcon\Config( [
 		'levels'       => [ Logger::EMERGENCY, Logger::CRITICAL, Logger::ERROR, Logger::SPECIAL, Logger::CUSTOM ],
 		// These exceptions are not reported to sentry.
 		'dontReport'   => [],
+	],
+	'database' => [
+		'adapter' => 'mysql'
 	]
 ] );
