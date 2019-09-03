@@ -35,9 +35,9 @@ echo $this->tag->form(
     <div class="col-sm-10">
 		<?php echo $this->tag->textField( [
 			"name",
-			"type" => "text",
+			"type"  => "text",
 			"class" => "form-control",
-			"id" => "fieldName"
+			"id"    => "fieldName"
 		] ) ?>
     </div>
 </div>
@@ -47,9 +47,9 @@ echo $this->tag->form(
     <div class="col-sm-10">
 		<?php echo $this->tag->textField( [
 			"email",
-			"type" => "email",
+			"type"  => "email",
 			"class" => "form-control",
-			"id" => "fieldEmail"
+			"id"    => "fieldEmail"
 		] ) ?>
     </div>
 </div>

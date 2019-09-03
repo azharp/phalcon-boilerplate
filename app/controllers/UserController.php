@@ -75,8 +75,8 @@ class UserController extends ControllerBase {
 				return;
 			}
 
-			$this->view->id = $user->id;
-			$this->view->name = $user->name;
+			$this->view->id    = $user->id;
+			$this->view->name  = $user->name;
 			$this->view->email = $user->email;
 
 			$this->tag->setDefault( 'id', $user->id );
@@ -99,8 +99,8 @@ class UserController extends ControllerBase {
 			return;
 		}
 
-		$user     = new Users();
-		$user->name = $this->request->getPost( 'name' );
+		$user        = new Users();
+		$user->name  = $this->request->getPost( 'name' );
 		$user->email = $this->request->getPost( 'email' );
 
 
@@ -154,7 +154,7 @@ class UserController extends ControllerBase {
 			return;
 		}
 
-		$user->name = $this->request->getPost( 'name' );
+		$user->name  = $this->request->getPost( 'name' );
 		$user->email = $this->request->getPost( 'email' );
 
 		if ( ! $user->save() ) {

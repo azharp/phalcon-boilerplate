@@ -7,7 +7,7 @@
 <div class="row">
     <nav>
         <ul class="pager">
-            <li class="previous"><?php echo $this->tag->linkTo(["user", "Back"]) ?></li>
+            <li class="previous"><?php echo $this->tag->linkTo( [ "user", "Back" ] ) ?></li>
         </ul>
     </nav>
 </div>
@@ -21,25 +21,25 @@
 <?php echo $this->getContent(); ?>
 
 <?php
-    echo $this->tag->form(
-        [
-            "user/save",
-            "autocomplete" => "off",
-            "class" => "form-horizontal"
-        ]
-    );
+echo $this->tag->form(
+	[
+		"user/save",
+		"autocomplete" => "off",
+		"class"        => "form-horizontal"
+	]
+);
 ?>
 
-<?php echo $this->tag->hiddenField("id") ?>
+<?php echo $this->tag->hiddenField( "id" ) ?>
 
 <div class="form-group">
     <label for="fieldId" class="col-sm-2 control-label">Name</label>
     <div class="col-sm-10">
 		<?php echo $this->tag->textField( [
 			"name",
-			"type" => "text",
+			"type"  => "text",
 			"class" => "form-control",
-			"id" => "fieldName"
+			"id"    => "fieldName"
 		] ) ?>
     </div>
 </div>
@@ -49,16 +49,16 @@
     <div class="col-sm-10">
 		<?php echo $this->tag->textField( [
 			"email",
-			"type" => "email",
+			"type"  => "email",
 			"class" => "form-control",
-			"id" => "fieldEmail"
+			"id"    => "fieldEmail"
 		] ) ?>
     </div>
 </div>
 
 <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
-        <?php echo $this->tag->submitButton(["Save", "class" => "btn btn-default"]) ?>
+		<?php echo $this->tag->submitButton( [ "Save", "class" => "btn btn-default" ] ) ?>
     </div>
 </div>
 
